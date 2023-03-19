@@ -135,7 +135,7 @@ body{
 .FootHead{
     padding-bottom: 35px;
 }
-.footer{
+.footer1{
     padding-top: 90px;
     text-align: center;
     border: 1px solid white;
@@ -152,7 +152,7 @@ body{
     border-bottom: none;
     color: var(--text-color);
 }
-footer a{
+.footer1 a{
     margin: 5px 5px;
     padding: 5px 5px;
     text-decoration: none;
@@ -167,4 +167,48 @@ footer a{
     color: var(--text-color);
     border-radius: 5rem;
     background-color: #5d5d63;;
+}
+.footer3{
+    border: 1px solid var(--text-color);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+.footer3 li{
+    padding: 15px 15px;
+    margin: 15px 15px;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+}
+.footer3 a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.footer4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
+.footer4-text p{
+    font-size: 1.6rem;
+}
+.footer4-iconSocial a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+.footer-iconSocial i{
+    padding: 1.3rem ;
+    font-size: 2rem;
+    color: #55ACEE;
 }
