@@ -108,6 +108,13 @@ body{
     text-align: center;
     color: var(--text-color);
 }
+.card a{
+    text-decoration: none;
+    color: var(--second-bg-color);
+}
+.card a:hover{
+    color: rgb(14, 196, 38)
+}
 .main{
     justify-content: center;
     width: 90vw;
@@ -121,6 +128,9 @@ body{
 }
 .rate{
     color: rgb(12, 196, 241);
+}
+.vote{
+    color: red;
 }
 
 .pagination a{
@@ -204,7 +214,6 @@ body{
     padding: .8rem;
     background: var(--main-color);
     border-radius: .8rem;
-    transition: .5s ease;
 }
 .footer-iconSocial i{
     padding: 1.3rem ;
