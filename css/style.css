@@ -26,6 +26,9 @@ body{
     text-decoration: none; /* remove underline from anchors */
     justify-content: center;
 }
+.navbar-toggler {
+    background-color: var(--text-color);
+}
 
 .fb {
     background-color: #3B5998;
@@ -103,6 +106,12 @@ body{
 #modJoin, #modSign{
    background-color: #55ACEE;
 }
+.btn{
+    color: var(--text-color);
+}
+.btn:hover{
+    color: var(--text-color);
+}
 .intro{
     margin: 3rem;
     text-align: center;
@@ -162,13 +171,13 @@ body{
     border-bottom: none;
     color: var(--text-color);
 }
-.footer1 a{
-    margin: 5px 5px;
-    padding: 5px 5px;
+.footer1 a {
+    margin: 5px 4px;
+    padding: 5px 1px;
     text-decoration: none;
     color: var(--text-color);
     border-radius: 5rem;
-    background-color: #5d5d63;;
+    background-color: #5d5d63;
 }
 .footer2 a{
     margin: 5px 5px;
