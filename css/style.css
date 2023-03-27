@@ -12,6 +12,10 @@ body{
 #signin, #join{
     color: var(--text-color);
 }
+#signin input, #join input{
+    color: black;
+    font-weight: 600;
+}
 #social{
     text-decoration: none;
     width: 100%;
@@ -67,10 +71,7 @@ body{
     margin-top: 5% ;
         
 }
-#email, #pass{
-    color: var(--bg-color);
-    font-weight: 600;
-}
+
 #cancel, #continue{
     text-align: center;
 }
@@ -260,6 +261,7 @@ div.form-group {
     border-radius: 50px;
     background: transparent;
 }
+
 .form-group span {
     margin: 35px 5px;
     color: black;
@@ -270,4 +272,20 @@ div.form-group {
 }
 .popular p{
     font-size: 25px;
+}
+
+/* validaiton */
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 13px;
+    height: 13px;
 }

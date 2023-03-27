@@ -81,7 +81,7 @@
                               <label for="pass">Password</label>
                               <input type="password" class="form-control" name="pass" id="pass">
                               <div class="col text-center mt-3">
-                                <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()">Continue</button>
+                                <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="checkData()">Continue</button>
                                 <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
                               </div>
                           </div>
@@ -115,15 +115,27 @@
                               <div class="form-control-plaintext">
                                 <span class="vl-innertext">OR</span>
                               </div>
-                              <label for="email">Email</label>
-                              <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
-                              <label for="pass">Password</label>
-                              <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
-                              
-                              <div class="col text-center mt-3">
-                                <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="checkData()" >Continue</button>
-                                <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
-                              </div>
+
+                              <form id="form" action="/">
+                                <div class="input-control">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
+                                  <div class="error"></div>
+                                </div>
+
+                                <div class="input-control">
+                                  <label for="pass">Password</label>
+                                  <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
+                                  <div class="error"></div>
+                                </div>
+
+                                <div class="col text-center mt-3">
+                                  <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()" >Continue</button>
+                                  <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+
+                              </form>
+
                           </div>
                           <div class="modal-footer d-block">
                             <p class="text-center">Already a member? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Sign In</span></p></a>
