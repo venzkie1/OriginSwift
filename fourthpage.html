@@ -15,138 +15,138 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header class="header">
-     <!--header  -->
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Origin Swift</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ourTeam.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="firstpage.html">Jobs</a>
-              </li>
-              <!-- dropdown menu -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">1</a></li>
-                  <li><a class="dropdown-item" href="#">2</a></li>
-                  <li><a class="dropdown-item" href="#">3</a></li>
-                  <li><a class="dropdown-item" href="#">4</a></li>
-                  <li><a class="dropdown-item" href="#">5</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" id="inpSearch" type="search" placeholder="Looking for something?" aria-label="Search">
-                <button class="btn" id="search" type="submit"><i class='bx bx-search-alt-2'></i></button>
-              </form>
-            </ul>
-            <!-- Sign in modal-->
-            <button type="button" class="btn me-2" id="modSign" data-bs-toggle="modal" data-bs-target="#signin">Sign In</button>
-    
-              <div class="modal" id="signin">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header d-block">
-                              <h5 class="modal-title text-center">Sign In to Origin Swift</h5>
-                          </div>
-                          <div class="modal-body">
-                            <!-- fb -->
-                            <a href="#" class="fb btn" id="social">
-                              <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+  <header class="header">
+    <!--header  -->
+   <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="index.html">Origin Swift</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="ourTeam.html">Become A Seller</a>
+             </li>
+             <!-- dropdown menu -->
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Services
+               </a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">1</a></li>
+                 <li><a class="dropdown-item" href="#">2</a></li>
+                 <li><a class="dropdown-item" href="#">3</a></li>
+                 <li><a class="dropdown-item" href="#">4</a></li>
+                 <li><a class="dropdown-item" href="#">5</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
+               <li class="nav-item">
+                 <a class="nav-link" href="ourTeam.html">About Us</a>
+               </li>
+             </li>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" id="inpSearch" type="search" placeholder="Looking for something?" aria-label="Search">
+               <button class="btn" id="search" type="submit"><i class='bx bx-search-alt-2'></i></button>
+             </form>
+           </ul>
+           <!-- Sign in modal-->
+           <button type="button" class="btn me-2" id="modSign" data-bs-toggle="modal" data-bs-target="#signin">Sign In</button>
+   
+             <div class="modal" id="signin">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal-header d-block">
+                             <h5 class="modal-title text-center">Sign In to Origin Swift</h5>
+                         </div>
+                         <div class="modal-body">
+                           <!-- fb -->
+                           <a href="#" class="fb btn" id="social">
+                             <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                            </a>
+                           <a href="#" class="twitter btn" id="social">
+                             <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
+                           </a>
+                           <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
+                           </a>
+                           <div class="form-control-plaintext">
+                             <span class="vl-innertext">OR</span>
+                           </div>
+                             <label for="email">Email</label>
+                             <input type="email" class="form-control" name="email" id="email">
+                             <label for="pass">Password</label>
+                             <input type="password" class="form-control" name="pass" id="pass">
+                             <div class="col text-center mt-3">
+                               <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="checkData()">Continue</button>
+                               <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                             </div>
+                         </div>
+                         <div class="modal-footer d-block">
+                           <p class="text-center">Not a member yet? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Join now</span></p></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Join us modal -->
+             <button type="button" class="btn" id="modJoin" data-bs-toggle="modal" data-bs-target="#join">Join Us
+             </button>
+             
+             <div class="modal" id="join">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal-header d-block">
+                             <h5 class="modal-title text-center">Join Origin Swift</h5>
+                         </div>
+                         <div class="modal-body">
+
+                           <!-- fb -->
+                           <a href="#" class="fb btn" id="social">
+                               <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                              </a>
+                             <a href="#" class="twitter btn" id="social">
+                               <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
                              </a>
-                            <a href="#" class="twitter btn" id="social">
-                              <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
-                            </a>
-                            <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
-                            </a>
-                            <div class="form-control-plaintext">
-                              <span class="vl-innertext">OR</span>
-                            </div>
-                              <label for="email">Email</label>
-                              <input type="email" class="form-control" name="email" id="email">
-                              <label for="pass">Password</label>
-                              <input type="password" class="form-control" name="pass" id="pass">
-                              <div class="col text-center mt-3">
-                                <button class="btn btn-default" id="continue"  type="submit" value="submit" onclick="checkData()">Continue</button>
-                                <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
-                              </div>
-                          </div>
-                          <div class="modal-footer d-block">
-                            <p class="text-center">Not a member yet? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Join now</span></p></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- Join us modal -->
-              <button type="button" class="btn" id="modJoin" data-bs-toggle="modal" data-bs-target="#join">Join Us
-              </button>
-              
-              <div class="modal" id="join">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header d-block">
-                              <h5 class="modal-title text-center">Join Origin Swift</h5>
-                          </div>
-                          <div class="modal-body">
+                             <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
+                             </a>
+                             <div class="form-control-plaintext">
+                               <span class="vl-innertext">OR</span>
+                             </div>
 
-                            <!-- fb -->
-                            <a href="#" class="fb btn" id="social">
-                                <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
-                               </a>
-                              <a href="#" class="twitter btn" id="social">
-                                <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
-                              </a>
-                              <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
-                              </a>
-                              <div class="form-control-plaintext">
-                                <span class="vl-innertext">OR</span>
-                              </div>
-                 
-                              <form id="form" action="/">
-                                <div class="input-control">
-                                  <label for="email">Email</label>
-                                  <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
-                                  <div class="error"></div>
-                                </div>
+                             <form id="form" action="/">
+                               <div class="input-control">
+                                 <label for="email">Email</label>
+                                 <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
+                                 <div class="error"></div>
+                               </div>
 
-                                <div class="input-control">
-                                  <label for="pass">Password</label>
-                                  <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
-                                  <div class="error"></div>
-                                </div>
+                               <div class="input-control">
+                                 <label for="pass">Password</label>
+                                 <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
+                                 <div class="error"></div>
+                               </div>
 
-                                <div class="col text-center mt-3">
-                                  <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()" >Continue</button>
-                                  <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
-                                </div>
+                               <div class="col text-center mt-3">
+                                 <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()" >Continue</button>
+                                 <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                               </div>
 
-                              </form>
-                              
-                          </div>
-                          <div class="modal-footer d-block">
-                            <p class="text-center">Already a member? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Sign In</span></p></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </nav>
-   </header>
+                             </form>
+                             
+                         </div>
+                         <div class="modal-footer d-block">
+                           <p class="text-center">Already a member? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Sign In</span></p></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+       </div>
+     </nav>
+  </header>
    <!--Head intro  -->
    <section class="intro">
     <h1>Get The Best Outsourcing Services</h1>

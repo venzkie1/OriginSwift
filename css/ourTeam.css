@@ -6,10 +6,16 @@
     --second-bg-color: #323946;
     --text-color: #fff;
 }
-body{
+.modal-content{
+    background-color: whitesmoke;
+    color: black;
+    /* background-color: var(--second-bg-color);
+    color: var(--text-color); */
+}
+/* body{
     background-color: var(--second-bg-color);
     color: var(--text-color);
-}
+} */
 #signin, #join{
     color: var(--text-color);
 }
@@ -76,11 +82,11 @@ body{
     text-align: center;
 }
 #continue{
-    background-color: #3B5998;
+    background-color: orange;
     color: var(--text-color);   
 }
 #cancel{
-    background-color: #dd4b39;
+    background-color: orange;
     color: white;
 }
 #alreadyMemb{
