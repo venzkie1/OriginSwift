@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+   
+    #card3{
+        border: 1px solid black;
+    }
+   body{
+    color: white;
+   }
+   .card{
+    border: none;
+   }
+   #cards2{
+    border: none;
+    background-color: #323946;
+   }
+   .header{
+    padding-top: 50px;
+    padding-bottom: 94px;
+   }
+   #find{
+    width: 25vw;
+   }
+   .jobs{
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   }
+   .sign-up{
+    background-color: #2c3341;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+   }
+   .popular{
+    padding-top: 50px;
+    padding-bottom: 50px;
+   }
+   .work{
+    /* background-color: lightgray; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+   }
+   
+   a{
+    color: black;
+    text-decoration: none;
+    
+   }
+   
+   #images{
+    /* background-color: lightskyblue; */
+    border-radius: 130px;
+   }
+  
+   .trusted{
+    background-color: #2c3341;
+    /* background-color: rgb(241, 240, 240); */
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+   #list a{
+    color: black;
+   }
+  
+   p{
+    font-family: 'Montserrat', sans-serif;
+   }
+   #buttons{
+    width: 30vw;
+    background-color: #55ACEE;
+   }
+   #submit{
+    background-color: #55ACEE;
+   }
+   
+   .footer{
+    background-color: #2c3341;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+   }
+   .footer  a{
+    text-decoration: none;
+   }
+   .footer li{
+    list-style: none;
+   }
+   a{
+    color: white;
+    text-decoration: none;
+    
+   }
+   #list a{
+    color: white;
+   }
+
+  /* BUTTON JAVASCRIPT */
+   #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  
+  border: none;
+  outline: none;
+  background-color: #2c3341;
+  color: #55ACEE;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+#myBtn:hover {
+  background-color: #55ACEE;
+  color: #2c3341;
+}
+   
+</style>
+
+<body >
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="index.html">Origin Swift</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-2" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-2" href="seller.html">Become A Seller</a>
+              </li>
+              <!-- dropdown menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><a class="dropdown-item" href="#">4</a></li>
+                  <li><a class="dropdown-item" href="#">5</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="ourTeam.html">About Us</a>
+                </li>
+              </li>
+              <form class="d-flex ms-2" role="search">
+                <input class="form-control me-2" id="inpSearch" type="search" placeholder="Looking for something?" aria-label="Search">
+                <button class="btn" id="search" type="submit"><i class='bx bx-search-alt-2'></i></button>
+              </form>
+            </ul>
+            <!-- Sign in modal-->
+            <button type="button" class="btn me-2 ms-2" id="modSign" data-bs-toggle="modal" data-bs-target="#signin">Sign In</button>
+    
+              <div class="modal" id="signin">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header d-block">
+                              <h5 class="modal-title text-center">Sign In to Origin Swift</h5>
+                          </div>
+                          <div class="modal-body">
+                            <!-- fb -->
+                            <a href="#" class="fb btn" id="social">
+                              <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                             </a>
+                            <a href="#" class="twitter btn" id="social">
+                              <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
+                            </a>
+                            <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
+                            </a>
+                            <div class="form-control-plaintext">
+                              <span class="vl-innertext">OR</span>
+                            </div>
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" name="email" id="email">
+                              <label for="pass">Password</label>
+                              <input type="password" class="form-control" name="pass" id="pass">
+                              <div class="col text-center mt-3">
+                                <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="checkData()">Continue</button>
+                                <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                              </div>
+                          </div>
+                          <div class="modal-footer d-block">
+                            <p class="text-center">Not a member yet? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Join now</span></p></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Join us modal -->
+              <button type="button" class="btn" id="modJoin" data-bs-toggle="modal" data-bs-target="#join">Join Us
+              </button>
+              
+              <div class="modal" id="join">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header d-block">
+                              <h5 class="modal-title text-center">Join Origin Swift</h5>
+                          </div>
+                          <div class="modal-body">
+
+                            <!-- fb -->
+                            <a href="#" class="fb btn" id="social">
+                                <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                               </a>
+                              <a href="#" class="twitter btn" id="social">
+                                <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
+                              </a>
+                              <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
+                              </a>
+                              <div class="form-control-plaintext">
+                                <span class="vl-innertext">OR</span>
+                              </div>
+
+                              <form id="form" action="/">
+                                <div class="input-control">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
+                                  <div class="error"></div>
+                                </div>
+
+                                <div class="input-control">
+                                  <label for="pass">Password</label>
+                                  <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
+                                  <div class="error"></div>
+                                </div>
+
+                                <div class="col text-center mt-3">
+                                  <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()" >Continue</button>
+                                  <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+
+                              </form>
+                              
+                          </div>
+                          <div class="modal-footer d-block">
+                            <p class="text-center">Already a member? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Sign In</span></p></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+        <div class="header">
+       <div class="container-fluid">
+        <div class="row">
+            <div class=" card col-lg-6 col-md-6 px-5 mt-4" id="cards2">
+                <h1 class="card-title mt-5   " id="cardTitle1" style="font-family: 'Poppins', sans-serif; font-size: 70px;">Get the best</h1>
+                <h1 class="card-title  " id="cardTitle1" style="font-family: 'Poppins', sans-serif; font-size: 70px;">Outsourcing</h1>
+                <h1 class="card-title  " id="cardTitle1" style="font-family: 'Poppins', sans-serif; font-size: 70px; ">Services</h1>
+                <a href="#service"><button class="form-control mt-5 text-white" id="buttons"><b>Get Started</b></button></a>
+                
+            </div>
+            <div class="col-lg-6 col-md-6 px-4 mt-2" id="images">
+                <img src="images/asian-girl-model-1.png" alt="" height="450vh"   class="card-img-top mt-5">
+            </div>
+        </div>
+        
+       </div>
+    </div>
+    <div class="trusted">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1 class="text-center mt-3" style="color: rgb(166, 164, 164); font-size: 30px;"><b>Trusted By:</b></h1>
+                </div>
+                
+                <div class="col-lg-8 ">
+                    <div align="center">
+                    <img src="images/google1.png" alt="Google" class=" px-4">
+                    <img src="images/meta.png" alt="facebook" class=" px-4">
+                    <img src="images/netflix2.png" alt="NETFLIX" class=" px-4">
+                    <img src="images/paypal.png" alt="PayPal" class=" px-4">
+                </div>
+            </div>
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+       <div class="jobs" id="service">
+       <div class="container-fluid">
+            <h1 class=" mt-4 mb-5 ms-5 text-white" style="font-family: 'Poppins', sans-serif;">Featured Services</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- item1 -->
+                <div class="col">
+                  <div class="card h-100" id="card3">
+                    <a href=""><img src="images/pic1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">skimble62  <span class="rate"><i class='bx bxs-star'></i> 5.0 </span> <span class="vote">(1)</span></h5><p>Level 1 Seller</p>
+                      <p class="card-text">I will be your outsourced cfo</a></p>
+                     
+                    </div>
+                    <div class="card-footer d-block">
+                      <medium class="text-muted"><i class='bx bxs-heart'></i></medium><span class="price">STARTING AT $500</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- item2 -->
+      <div class="col">
+        <div class="card h-100" id="card3">
+          <a href=""><img src="images/pic2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">ehtesham9863  <span class="rate"><i class='bx bxs-star' ></i> 5.0 </span> <span class="vote">(1)</span></h5><p>Level 1 Seller</p>
+            <p class="card-text">I am a professional virtual assistant outsource with confidence</a></p>
+           
+          </div>
+          <div class="card-footer d-block">
+            <medium class="text-muted"><i class='bx bxs-heart' ></i></medium><span class="price">STARTING AT $50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- item3 -->
+      <div class="col">
+        <div class="card h-100" id="card3">
+          <a href=""><img src="images/pic3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">nadeemyasin787 <span class="rate"><i class='bx bxs-star' ></i> 5.0 </span> <span class="vote">(1)</span></h5><p>Level 1 Seller</p>
+            <p class="card-text">I will draft strong and powerful agreements and outsource agreements.</a></p>
+            
+          </div>
+          <div class="card-footer d-block">
+            <medium class="text-muted"><i class='bx bxs-heart' ></i></medium><span class="price">STARTING AT $10</span>
+          </div>
+        </div>
+      </div>
+      <!-- item4 -->
+      <div class="col">
+        <div class="card h-100" id="card3">
+          <a href=""><img src="images/pic4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: 'Poppins', sans-serif;">tesfatadesse   <span class="rate"><i class='bx bxs-star' ></i> 5.0 </span> <span class="vote">(4)</span></h5><p>Level 2 Seller</p>
+            <p class="card-text">I will handle outsourced cfo tasks, financial reporting, bank reconciliations, etc.</a></p>
+          
+          </div>
+          <div class="card-footer d-block">
+            <medium class="text-muted"><i class='bx bxs-heart' ></i></medium><span class="price">STARTING AT $45</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+            </div>
+            <div align="center">
+            <a href="service.html"><button type="button" id="buttons" class="form-control mt-5" >View more</button></a>
+        </div>
+       
+       </div>
+    </div>
+
+    <div class="popular">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="card col-lg-6 col-md-6 px-5 py-4" id="cards2" >
+            <h1 class="card-title py-4" style="font-family: 'Poppins', sans-serif; font-size: 33px;">A whole world of freelance talent at your fingertips</h1>
+            
+            <h4 class="card-text mt-2" style="font-family: 'Poppins', sans-serif; font-size: 22px;"><i class="bi bi-check-circle-fill px-3"></i>The best for every budget</h4>
+            <p class="card-text" style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <h4 class="card-text mt-2" style="font-family: 'Poppins', sans-serif; font-size: 22px;"><i class="bi bi-check-circle-fill px-3"></i></i>Quality work done quickly</h4>
+            <p class="card-text" style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <h4 class="card-text mt-2" style="font-family: 'Poppins', sans-serif; font-size: 22px;"><i class="bi bi-check-circle-fill px-3"></i></i>Protected payments, every time</h4>
+            <p class="card-text" style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <h4 class="card-text mt-2" style="font-family: 'Poppins', sans-serif; font-size: 22px;"><i class="bi bi-check-circle-fill px-3"></i></i>24/7 support</h4>
+            <p class="card-text" style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!-- <p class="card-text">Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space. An interior designer is someone who plans, researches, coordinates, and manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design. This magazine focuses on information critical to practicing architects, delivering information and ideas to inspire their designs, enhance their practice, expand their business and connect with their peers.</p> -->
+        </div>
+    <div class="card col-lg-6 col-md-6 px-5 py-5" id="cards2">
+        <img src="images/image1.avif" alt=""class="card-img-top" height="500vh" >
+    </div>
+</div>
+</div>
+</div>
+
+<div class="sign-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 style="font-family: 'Poppins', sans-serif;">Sign Up to our newsletter</h1>
+                <p>Stay up to date with the latest news, announcements, and articles</p>
+            </div>
+            <div class="col-lg-6 ">
+               <form class="d-flex   mt-3 ">
+                    <input type="text" name="email" id="email" class="form-control w-60" placeholder="Enter your email">
+                    <button type="submit" class="btn ms-1" id="submit">Submit</button>
+               </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="work">
+        <div class="container-fluid">
+            <!-- <h1 class="text-center mt-5">For Talent</h1> -->
+            <div class="row">
+                <div class="card col-lg-6 col-md-6 px-5 py-4" id="cards2">
+                    <img src="images/carousel.avif" alt=""class="card-img-top"   >
+                </div>
+            <div class="card col-lg-6 col-md-6 px-5 py-5 text-center" id="cards2">
+                <h1 class="card-title py-4" style="font-family: 'Poppins', sans-serif;"><b>Find great work</b></h1>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div align="center">
+                  <button class="form-control w-50 mt-5 text-white" id="buttons">Find opportunities</button>
+              </div>
+              </div>
+           
+</div>
+</div>
+    </div>
+
+
+
+
+       
+    
+    
+      
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 ms-4 mt-2">
+                  <h1 class="mt-5" style="font-family: 'Poppins', sans-serif;">Origin Swift</h1>
+          </div>
+          <div class="col-auto ms-4 mt-5" id="list">
+              <h4 style="font-family: 'Poppins', sans-serif;">Company</h4>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Media Kit</a></li>
+              <li><a href="">Contact</a></li>
+          
+          </div>
+          <div class="col-auto ms-5 mt-5" id="list">
+              <h4 style="font-family: 'Poppins', sans-serif;">Resources</h4>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">NewsLetters</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Help Centre</a></li>
+              <li><a href="">Tutorials</a></li>
+              <li><a href="">Support</a></li>
+          
+          </div>
+          <div class="col-auto ms-4 mt-5" id="list">
+              <h4 style="font-family: 'Poppins', sans-serif;">Socials</h4>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Github</a></li>
+              <li><a href="">LinkedIn</a></li>
+              <li><a href="">Dribble</a></li>
+          
+          </div>
+          
+
+          <p class=" text-center pt-5 mt-5 ">&copy; 2023 Origin Swift. All Rights Reserved.</p>
+      </div>
+      
+  </div>
+
+  <!--BUTTON JAVASCRIPT-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+    <script>
+      // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+
+      <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
