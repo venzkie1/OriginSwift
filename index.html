@@ -134,125 +134,126 @@
 </style>
 
 <body >
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-2" href="index.html">Origin Swift</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active ms-2" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-2" href="seller.html">Become A Seller</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-2" href="firstpage.html">Services</a>
-              </li>
+  
+   <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="index.html">Origin Swift</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="seller.html">Become A Seller</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="firstpage.html">Services</a>
+             </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="ourTeam.html">About Us</a>
+               </li>
+             </li>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" id="inpSearch" type="search" placeholder="Looking for something?" aria-label="Search">
+               <button class="btn" id="search" type="submit"><i class='bx bx-search-alt-2'></i></button>
+             </form>
+           </ul>
+           <!-- Sign in modal-->
+           <button type="button" class="btn me-2" id="modSign" data-bs-toggle="modal" data-bs-target="#signin">Sign In</button>
+   
+             <div class="modal" id="signin">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal-header d-block">
+                             <h5 class="modal-title text-center">Sign In to Origin Swift</h5>
+                         </div>
+                         <div class="modal-body">
+                           <!-- fb -->
+                           <a href="#" class="fb btn" id="social">
+                             <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                            </a>
+                           <a href="#" class="twitter btn" id="social">
+                             <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
+                           </a>
+                           <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
+                           </a>
+                           <div class="form-control-plaintext">
+                             <span class="vl-innertext">OR</span>
+                           </div>
+                             <label for="email">Email</label>
+                             <input type="email" class="form-control" name="email" id="email">
+                             <label for="pass">Password</label>
+                             <input type="password" class="form-control" name="pass" id="pass">
+                             <div class="col text-center mt-3">
+                               <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="checkData()">Continue</button>
+                               <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                             </div>
+                         </div>
+                         <div class="modal-footer d-block">
+                           <p class="text-center">Not a member yet? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Join now</span></p></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Join us modal -->
+             <button type="button" class="btn" id="modJoin" data-bs-toggle="modal" data-bs-target="#join">Join Us
+             </button>
+             
+             <div class="modal" id="join">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal-header d-block">
+                             <h5 class="modal-title text-center">Join Origin Swift</h5>
+                         </div>
+                         <div class="modal-body">
 
-                <li class="nav-item">
-                  <a class="nav-link ms-2" href="ourTeam.html">About Us</a>
-                </li>
-              </li>
-              <form class="d-flex ms-2" role="search">
-                <input class="form-control me-2" id="inpSearch" type="search" placeholder="Looking for something?" aria-label="Search">
-                <button class="btn" id="search" type="submit"><i class='bx bx-search-alt-2'></i></button>
-              </form>
-            </ul>
-            <!-- Sign in modal-->
-            <button type="button" class="btn me-2 ms-2" id="modSign" data-bs-toggle="modal" data-bs-target="#signin">Sign In</button>
-    
-              <div class="modal" id="signin">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header d-block">
-                              <h5 class="modal-title text-center">Sign In to Origin Swift</h5>
-                          </div>
-                          <div class="modal-body">
-                            <!-- fb -->
-                            <a href="#" class="fb btn" id="social">
-                              <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                           <!-- fb -->
+                           <a href="#" class="fb btn" id="social">
+                               <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
+                              </a>
+                             <a href="#" class="twitter btn" id="social">
+                               <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
                              </a>
-                            <a href="#" class="twitter btn" id="social">
-                              <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
-                            </a>
-                            <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
-                            </a>
-                            <div class="form-control-plaintext">
-                              <span class="vl-innertext">OR</span>
-                            </div>
-                              <label for="email">Email</label>
-                              <input type="email" class="form-control" name="email" id="email">
-                              <label for="pass">Password</label>
-                              <input type="password" class="form-control" name="pass" id="pass">
-                              <div class="col text-center mt-3">
-                                <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="checkData()">Continue</button>
-                                <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
-                              </div>
-                          </div>
-                          <div class="modal-footer d-block">
-                            <p class="text-center">Not a member yet? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Join now</span></p></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- Join us modal -->
-              <button type="button" class="btn" id="modJoin" data-bs-toggle="modal" data-bs-target="#join">Join Us
-              </button>
-              
-              <div class="modal" id="join">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header d-block">
-                              <h5 class="modal-title text-center">Join Origin Swift</h5>
-                          </div>
-                          <div class="modal-body">
+                             <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
+                             </a>
+                             <div class="form-control-plaintext">
+                               <span class="vl-innertext">OR</span>
+                             </div>
 
-                            <!-- fb -->
-                            <a href="#" class="fb btn" id="social">
-                                <span class="socialIcon"><i class='bx bxl-facebook-circle' ></i></i></span>Continue with Facebook
-                               </a>
-                              <a href="#" class="twitter btn" id="social">
-                                <span class="socialIcon"><i class='bx bxl-instagram' ></i> </span>Continue with Instagram
-                              </a>
-                              <a href="#" class="google btn" id="social"><span class="socialIcon"><i class='bx bxl-google-plus-circle' ></i></span> Continue with Google+
-                              </a>
-                              <div class="form-control-plaintext">
-                                <span class="vl-innertext">OR</span>
-                              </div>
+                             <form id="form" action="/">
+                               <div class="input-control">
+                                 <label for="email">Email</label>
+                                 <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
+                                 <div class="error"></div>
+                               </div>
 
-                              <form id="form" action="/">
-                                <div class="input-control">
-                                  <label for="email">Email</label>
-                                  <input type="email" class="form-control" name="email" id="emailLog" placeholder="Enter your Email">
-                                  <div class="error"></div>
-                                </div>
+                               <div class="input-control">
+                                 <label for="pass">Password</label>
+                                 <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
+                                 <div class="error"></div>
+                               </div>
 
-                                <div class="input-control">
-                                  <label for="pass">Password</label>
-                                  <input type="password" class="form-control" name="pass" id="passLog" placeholder="Enter your Password">
-                                  <div class="error"></div>
-                                </div>
+                               <div class="col text-center mt-3">
+                                 <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()" >Continue</button>
+                                 <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
+                               </div>
 
-                                <div class="col text-center mt-3">
-                                  <button class="btn btn-default" id="continue" type="submit" value="submit" onclick="addData()" >Continue</button>
-                                  <button type="button" class="btn btn-default" id="cancel" data-bs-dismiss="modal">Cancel</button>
-                                </div>
+                             </form>
+                             
+                         </div>
+                         <div class="modal-footer d-block">
+                           <p class="text-center">Already a member? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Sign In</span></p></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+       </div>
+     </nav>
 
-                              </form>
-                              
-                          </div>
-                          <div class="modal-footer d-block">
-                            <p class="text-center">Already a member? <a data-target="signin" data-toggle="modal" href="#signin" style="text-decoration: none;"><span id="alreadyMemb">Sign In</span></p></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </nav>
         <div class="header">
        <div class="container-fluid">
         <div class="row">
@@ -263,7 +264,7 @@
                 <a href="#service"><button class="form-control mt-5 text-white" id="buttons"><b>Get Started</b></button></a>
                 
             </div>
-            <div class="col-lg-6 col-md-6 px-4 mt-2" id="images">
+            <div class="col-lg-6 col-md-6  mt-2" id="images">
                 <img src="images/asian-girl-model-1.png" alt=""   class="card-img-top mt-5">
             </div>
         </div>
@@ -296,7 +297,7 @@
        <div class="container-fluid">
             <h1 class=" mt-4 mb-5 ms-5 text-white" style="font-family: 'Poppins', sans-serif;">Featured Services</h1>
             <div class="row row-cols-1 row-cols-md-4 g-4">
-                <!-- item1 -->
+               
                 <div class="col">
                   <div class="card h-100" id="card3">
                     <a href=""><img src="images/pic1.jpg" class="card-img-top" alt="...">
@@ -310,7 +311,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- item2 -->
+               
       <div class="col">
         <div class="card h-100" id="card3">
           <a href=""><img src="images/pic2.jpg" class="card-img-top" alt="...">
@@ -325,7 +326,7 @@
         </div>
       </div>
 
-      <!-- item3 -->
+      
       <div class="col">
         <div class="card h-100" id="card3">
           <a href=""><img src="images/pic3.jpg" class="card-img-top" alt="...">
@@ -339,7 +340,7 @@
           </div>
         </div>
       </div>
-      <!-- item4 -->
+      
       <div class="col">
         <div class="card h-100" id="card3">
           <a href=""><img src="images/pic4.jpg" class="card-img-top" alt="...">
@@ -380,9 +381,9 @@
             
             <h4 class="card-text mt-2" style="font-family: 'Poppins', sans-serif; font-size: 22px;"><i class="bi bi-check-circle-fill px-3"></i></i>24/7 support</h4>
             <p class="card-text" style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <!-- <p class="card-text">Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space. An interior designer is someone who plans, researches, coordinates, and manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design. This magazine focuses on information critical to practicing architects, delivering information and ideas to inspire their designs, enhance their practice, expand their business and connect with their peers.</p> -->
+            
         </div>
-    <div class="card h-100 col-lg-6 col-md-6 px-5 py-5" id="cards2">
+    <div class="card  col-lg-6 col-md-6 px-5 py-5" id="cards2">
         <img src="images/image1.avif" alt=""class="card-img-top"  >
     </div>
 </div>
@@ -411,16 +412,16 @@
 
     <div class="work">
         <div class="container-fluid">
-            <!-- <h1 class="text-center mt-5">For Talent</h1> -->
+            
             <div class="row">
                 <div class="card card h-100 col-lg-6 col-md-6 px-5 py-4" id="cards2">
                     <img src="images/carousel.avif" alt=""class="card-img-top"   >
                 </div>
-            <div class="card col-lg-6 col-md-6 px-5 py-5 text-center" id="cards2">
+            <div class="card col-lg-6 col-md-6 px-5 mt-3 text-center" id="cards2">
                 <h1 class="card-title py-4" style="font-family: 'Poppins', sans-serif;"><b>Find great work</b></h1>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, officiis! ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div align="center">
-                  <button class="form-control w-50 mt-5 text-white" id="buttons">Find opportunities</button>
+                  <button class="form-control w-50 mt-3 text-white" id="buttons">Find opportunities</button>
               </div>
               </div>
            
@@ -438,10 +439,10 @@
     <div class="footer">
       <div class="container">
           <div class="row">
-              <div class="col-lg-6 ms-4 mt-2">
+              <div class="col-lg-6 px-5  mt-2">
                   <h1 class="mt-5" style="font-family: 'Poppins', sans-serif;">Origin Swift</h1>
           </div>
-          <div class="col-auto ms-4 mt-5" id="list">
+          <div class="col-auto mt-5 px-4 " id="list">
               <h4 style="font-family: 'Poppins', sans-serif;">Company</h4>
               <li><a href="">About Us</a></li>
               <li><a href="">Careers</a></li>
@@ -451,7 +452,7 @@
               <li><a href="">Contact</a></li>
           
           </div>
-          <div class="col-auto ms-5 mt-5" id="list">
+          <div class="col-auto px-5   mt-5" id="list">
               <h4 style="font-family: 'Poppins', sans-serif;">Resources</h4>
               <li><a href="">Blogs</a></li>
               <li><a href="">NewsLetters</a></li>
@@ -461,7 +462,7 @@
               <li><a href="">Support</a></li>
           
           </div>
-          <div class="col-auto ms-4 mt-5" id="list">
+          <div class="col-auto px-4  mt-5" id="list">
               <h4 style="font-family: 'Poppins', sans-serif;">Socials</h4>
               <li><a href="">Facebook</a></li>
               <li><a href="">Instagram</a></li>
