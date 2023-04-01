@@ -213,11 +213,6 @@ small {
     margin: auto;
 }
 
-.profile-box img:hover{
-    width: 370px;
-    height: 35vh;
-}
-
 .profile-box:hover{
     background: #2197f3;
 }
